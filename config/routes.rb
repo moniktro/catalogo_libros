@@ -1,4 +1,6 @@
 CatalogoLibros::Application.routes.draw do
+  get "static_pages/inicio"
+
   resources :libros
 
 
