@@ -1,3 +1,36 @@
-<h1>Catalogo</h1>
-<h2>Inicio</h2>
-<p>Catalogo tienda de libros</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;.
+	charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<title>Library Info System</title>
+	<%= stylesheet_link_tag "style" %>
+</head>
+<body id="catalogo">
+	<div id="container">
+		<div id="header">
+			<h1>Catalogo Tienda Libros</h1>
+			<h3>Buscar</h3>
+			<br>
+			<h4>Busqueda por Titulo y Autor</h4>			
+			<form name=formBuscar>
+				<input type="text" name=Buscar value="Ingrese palabra o frase">
+				<br>
+				<button>
+					<b>Buscar</b>
+		        </button>
+		        <br>
+		        <input type="radio" name="autor" value="Autor"> Autor<br>
+				<input type="radio" name="titulo" value="Titulo"> Titulo<br>
+			</form>
+		</div>
+		<div id="content">
+			<%= yield -%>
+		</div>
+		<div id="sidebar"></div>
+	</div>
+</body>
+</html>
+
